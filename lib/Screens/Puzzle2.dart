@@ -33,7 +33,10 @@ class Puzzle2 extends StatelessWidget {
         backgroundColor: kBackgroundDark,
         centerTitle: true,
         title: Title(
-          child: Text('Puzzle 2'),
+          child: Text('Puzzle 2',style: TextStyle(
+              fontFamily: kFontFamilyTitle,
+              fontSize: kPuzzleTitleSize
+          ),),
           color: kBackgroundDark,
         ),
       ),

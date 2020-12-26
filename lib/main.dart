@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:labyrinth/Screens/Instruction.dart';
-import 'package:labyrinth/Screens/Puzzle1.dart';
+import 'package:labyrinth/Screens/P1/Puzzle1.dart';
 import 'package:labyrinth/Screens/Puzzle5.dart';
 import 'package:labyrinth/Screens/WelcomeScreen.dart';
 import 'Screens/Puzzle2.dart';

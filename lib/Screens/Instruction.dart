@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:labyrinth/Screens/Puzzle1.dart';
+import 'package:labyrinth/Screens/P1/Puzzle1.dart';
 import 'package:labyrinth/constants.dart';
 
 class InstructionPage extends StatelessWidget {
@@ -33,20 +33,20 @@ In this world, where privacy doesn't exist, cryptography and encryption techniqu
           Padding(
             padding: const EdgeInsets.fromLTRB(50, 30, 50, 30),
             child: FlatButton(
-              splashColor: kMediumDark,
+              splashColor: kTextColor,
               onPressed: () {
                 Navigator.push(context,MaterialPageRoute(builder: (context)=> Puzzle1()));
               },
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(40),
-                    color: kMediumDark),
+                    color: kTextColor),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Center(
                     child: Text(
                       'Take me to the first puzzle!',
-                      style: TextStyle(fontSize: 20, color: kTextColor),
+                      style: TextStyle(fontSize: 20, color: kBackgroundDark),
                     ),
                   ),
                 ),
