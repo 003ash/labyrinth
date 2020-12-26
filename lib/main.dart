@@ -10,7 +10,6 @@ void main() {
   runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.dark(),
         initialRoute: 'welcomeScreen',
         routes: {
           'welcomeScreen':(context) => WelcomeScreen(),
