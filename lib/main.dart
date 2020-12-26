@@ -11,7 +11,7 @@ void main() {
   runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: 'instructions',
+        initialRoute: 'welcomeScreen',
         routes: {
           'welcomeScreen':(context) => WelcomeScreen(),
           'puzzle1':(context) => Puzzle1(),

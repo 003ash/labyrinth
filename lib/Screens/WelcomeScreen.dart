@@ -1,14 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:labyrinth/Screens/Instruction.dart';
 import 'package:labyrinth/constants.dart';
+
+import 'SlideTransition.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          //Navigator.pushNamed(context, MaterialPageRoute(builder: ));
+        onPressed: () {
+          Route route =
+              MySlideTransition(builder: (context) => InstructionPage());
+          Navigator.push(context, route);
         },
         child: Icon(Icons.arrow_forward_ios),
         backgroundColor: kBackgroundDark,
@@ -22,19 +27,14 @@ class WelcomeScreen extends StatelessWidget {
             Container(
               height: 200,
               child: Image(
-                image: AssetImage(
-                  'images/logoInPurple.png'
-                ),
+                image: AssetImage('images/logoInPurple.png'),
               ),
             ),
             Container(
               child: Text(
                 'Labyrinth',
                 style: TextStyle(
-                  fontSize: 55,
-                  color: kTextColor,
-                  fontFamily: 'Lobster'
-                ),
+                    fontSize: 55, color: kTextColor, fontFamily: 'Lobster'),
               ),
             ),
             SizedBox(
@@ -43,10 +43,7 @@ class WelcomeScreen extends StatelessWidget {
             Container(
               child: Text(
                 "The maze leading to Santa's bag",
-                style: TextStyle(
-                  color: kTextColor,
-                  fontSize: 20
-                ),
+                style: TextStyle(color: kTextColor, fontSize: 20),
               ),
             ),
             SizedBox(
