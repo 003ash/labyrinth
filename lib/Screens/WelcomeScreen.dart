@@ -8,7 +8,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          //Navigator.pushNamed(context, routeName)
+          //Navigator.pushNamed(context, MaterialPageRoute(builder: ));
         },
         child: Icon(Icons.arrow_forward_ios),
         backgroundColor: kBackgroundDark,

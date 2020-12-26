@@ -28,3 +28,7 @@ flutter:
    - family: Lobster
      fonts:
        - asset: fonts/Lobster-Regular.ttf
+   - family: Pacifico
+     fonts:
+       - asset: fonts/Pacifico-Regular.ttf
+
