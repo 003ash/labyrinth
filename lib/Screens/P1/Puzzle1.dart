@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:labyrinth/CommonWidgets/PuzzleRow.dart';
 import 'package:labyrinth/Screens/P1/CoordinatesForAb.dart';
 import 'package:labyrinth/Screens/P1/Hint1.dart';
-import 'package:labyrinth/Screens/Puzzle2.dart';
+import 'package:labyrinth/Screens/P2/Puzzle2.dart';
 import 'package:labyrinth/Screens/SlideTransition.dart';
 import '../../constants.dart';
 
@@ -70,53 +71,24 @@ class Puzzle1 extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            Row(
-              children: [
-                Icon(Icons.arrow_forward_sharp),
-                FlatButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> CoordinatesForFirstAb(text: '''(2,2) (2,3) (2,4) (2,5) (2,6) (2,7)
+            PuzzleRow(hint: '''(2,2) (2,3) (2,4) (2,5) (2,6) (2,7)
 (3,4) (3,5) (3,7)
-(4,3) (4,5) (4,6) (4,7)''',)));
-                    },
-                    child: Text('Coordinates for 1st alphabet',
-                        style: kDefaultTextStyle)),
-              ],
-            ),
+(4,3) (4,5) (4,6) (4,7)''',title: 'Coordinates for 1st alphabet'
+              ,),
             SizedBox(
               height: 20,
             ),
-            Row(
-              children: [
-                Icon(Icons.arrow_forward_sharp),
-                FlatButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> CoordinatesForFirstAb(text:'''(5,2) (5,3) (5,4) (5.5) (5,6) (5,7)
+            PuzzleRow(hint: '''(5,2) (5,3) (5,4) (5.5) (5,6) (5,7)
 (6,2) (6,7)
-(7,2) (7,3) (7,4) (7,5) (7,6) (7,7)''' ,)));
-                    },
-                    child: Text('Coordinates for 2nd alphabet',
-                        style: kDefaultTextStyle)),
-              ],
-            ),
+(7,2) (7,3) (7,4) (7,5) (7,6) (7,7)''',title: 'Coordinates for 2nd alphabet',),
             SizedBox(
               height: 20,
             ),
-            Row(
-              children: [
-                Icon(Icons.arrow_forward_sharp),
-                FlatButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> CoordinatesForFirstAb(text: '''(8,7)
+            PuzzleRow(hint: '''(8,7)
 (9,7)
 (10,2) (10,3) (10,4) (10,5) (10,6) (10,7) 
 (11,7)
-(12,7)''',)));
-                    },
-                    child: Text('Coordinates for 3rd alphabet',
-                        style: kDefaultTextStyle)),
-              ],
-            ),
+(12,7)''',title: 'Coordinates for 3rd alphabet'),
             SizedBox(
               height: 20,
             ),

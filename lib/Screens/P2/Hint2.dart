@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 
-class CoordinatesForFirstAb extends StatelessWidget {
-  CoordinatesForFirstAb({this.text});
-  final String text;
+class Hint2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    String hintString = '-. --- .--    -.-- --- ..-    -.-. .- -.    --. --- --- --. .-.. .    - .... .    .- -. ... .-- . .-.  --- ..-.     .--. .-. . ...- .. --- ..- ...     .--. ..- --.. --.. .-.. .     - ---  -.-. .-. .- -.-. -.-    - .... .. ...    --- -. .';
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -32,7 +31,7 @@ class CoordinatesForFirstAb extends StatelessWidget {
                   Container(
                     color: kLightColor,
                     child: Text(
-                        text,style: kDefaultTextStyle
+                        hintString,style: kDefaultTextStyle
                     ),
                   ),
                 ],
