@@ -6,7 +6,8 @@ import '../constants.dart';
 class PuzzleRow extends StatelessWidget {
   final String hint;
   final String title;
-  PuzzleRow({this.hint,this.title});
+  final Widget child;
+  PuzzleRow({this.hint,this.title,this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class PuzzleRow extends StatelessWidget {
         Icon(Icons.arrow_forward_sharp),
         FlatButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> CoordinatesForFirstAb(text: hint,)));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> CoordinatesForFirstAb(text: hint, child: child)));
             },
             child: Text(title,
                 style: kDefaultTextStyle)),

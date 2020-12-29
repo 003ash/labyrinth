@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../constants.dart';
 
-class CoordinatesForFirstAb extends StatelessWidget {
-  CoordinatesForFirstAb({this.text,this.child});
-  final String text;
-  final Widget child;
+class Hint3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,14 +14,14 @@ class CoordinatesForFirstAb extends StatelessWidget {
       body: Container(
         color: kLightColor,
         child: Padding(
-          padding: const EdgeInsets.all(30),
+          padding: const EdgeInsets.all(20),
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
                 border: Border.all(color: kBackgroundDark,width: 2)
             ),
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.fromLTRB(15,20,5,20),
               child: Column(
                 children: [
                   Icon(Icons.lightbulb_outline,size: 60,),
@@ -32,9 +30,12 @@ class CoordinatesForFirstAb extends StatelessWidget {
                   ),
                   Container(
                     color: kLightColor,
-                    child: text == null ? child : Text(
-                        text,style: kDefaultTextStyle
-                    ),
+                    child: Text(
+                      '''Decode this only if you don't get the puzzle ahead.
+                      
+Gur tvira fgnss abgngvbaf ner npghnyyl nycunorgf va juvpu '#' qrabgrf 1 nycunorg nsgre gur nycunorg va gung cbfvgvba.''',
+                      style: kDefaultTextStyle,
+                    )
                   ),
                 ],
               ),

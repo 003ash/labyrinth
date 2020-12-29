@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:labyrinth/CommonWidgets/PuzzleRow.dart';
-import 'package:labyrinth/Screens/P2/Hint2.dart';
-import 'package:labyrinth/Screens/P3/Puzzle3.dart';
+import 'package:labyrinth/Screens/Puzzle4.dart';
 import '../../constants.dart';
 import '../SlideTransition.dart';
+import 'Hint3.dart';
 
-class Puzzle2 extends StatelessWidget {
+class Puzzle3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,23 +27,23 @@ class Puzzle2 extends StatelessWidget {
               ),
               onPressed: () {
                 Route route =
-                    MySlideTransition(builder: (context) => Puzzle3());
+                    MySlideTransition(builder: (context) => Puzzle4());
                 Navigator.push(context, route);
               })
         ],
         backgroundColor: kBackgroundDark,
         centerTitle: true,
         title: Title(
-          child: Text('Puzzle 2',style: TextStyle(
+          child: Text('Puzzle 3',style: TextStyle(
               fontFamily: kFontFamilyTitle,
-              fontSize: kPuzzleTitleSize
+              fontSize: kPuzzleTitleSize,
           ),),
           color: kBackgroundDark,
         ),
       ),
       backgroundColor: kTextColor,
       body: Padding(
-        padding: EdgeInsets.all(12),
+        padding: EdgeInsets.all(12.0),
         child: Column(
           children: [
             SizedBox(
@@ -63,20 +63,44 @@ class Puzzle2 extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Hint2()));
+                      MaterialPageRoute(builder: (context) => Hint3()));
                 }),
             SizedBox(
               height: 30,
             ),
-            PuzzleRow(title:'1st sentence',hint: 'Pbatenghyngvbaf ba fbyivat lbhe svefg chmmyr.',),
+            PuzzleRow(title: 'Image 1',child: Image(
+              image: AssetImage(
+                'images/1st staff.jpeg'
+              ),
+            ),
+            ),
             SizedBox(
               height: 20,
             ),
-            PuzzleRow(title: '2nd sentence',hint: 'Gur uvag sbe lbhe arkg chmmyr vf gur jbeq sbe n ybat fgvpx hfrq nf n fhccbeg jura jnyxvat be pyvzovat be nf n jrncba.',),
+            PuzzleRow(title: 'Image 2',child: Image(
+              image: AssetImage(
+                  'images/2nd staff.jpeg'
+              ),
+            ),
+            ),
             SizedBox(
               height: 20,
             ),
-            PuzzleRow(title: '3rd sentence',hint: 'Guvf vf nyfb gur anzr bs abgngvba hfrq va Oevgvfu zhfvp gurbel. ',)
+            PuzzleRow(title: 'Image 3',child: Image(
+              image: AssetImage(
+                  'images/3rd staff.jpeg'
+              ),
+            ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            PuzzleRow(title: 'Image 4',child: Image(
+              image: AssetImage(
+                  'images/4th staff.jpeg'
+              ),
+            ),
+            ),
           ],
         ),
       ),
