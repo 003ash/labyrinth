@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:labyrinth/CommonWidgets/PuzzleRow.dart';
-import 'package:labyrinth/Screens/Puzzle4.dart';
+import 'package:labyrinth/Screens/P4/Puzzle4.dart';
 import '../../constants.dart';
 import '../SlideTransition.dart';
 import 'Hint3.dart';

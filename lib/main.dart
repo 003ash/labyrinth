@@ -5,7 +5,7 @@ import 'package:labyrinth/Screens/Puzzle5.dart';
 import 'package:labyrinth/Screens/WelcomeScreen.dart';
 import 'Screens/P2/Puzzle2.dart';
 import 'Screens/P3/Puzzle3.dart';
-import 'Screens/Puzzle4.dart';
+import 'Screens/P4/Puzzle4.dart';
 
 void main() {
   runApp(
