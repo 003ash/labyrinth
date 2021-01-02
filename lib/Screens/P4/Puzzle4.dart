@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:labyrinth/Screens/P4/VgSquare.dart';
-import 'package:labyrinth/Screens/Puzzle5.dart';
+import 'package:labyrinth/Screens/P5/Puzzle5.dart';
 import 'package:labyrinth/constants.dart';
 import 'package:labyrinth/Screens/SlideTransition.dart';
 

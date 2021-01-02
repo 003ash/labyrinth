@@ -31,7 +31,7 @@ In this world, where privacy doesn't exist, cryptography and encryption techniqu
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(50, 30, 50, 30),
+            padding: const EdgeInsets.fromLTRB(30, 30, 30, 30),
             child: FlatButton(
               splashColor: kTextColor,
               onPressed: () {
@@ -44,9 +44,11 @@ In this world, where privacy doesn't exist, cryptography and encryption techniqu
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Center(
-                    child: Text(
-                      'Take me to the first puzzle!',
-                      style: TextStyle(fontSize: 20, color: kBackgroundDark),
+                    child: Center(
+                      child: Text(
+                        '''Take me to the first puzzle!''',
+                        style: TextStyle(fontSize: 20, color: kBackgroundDark),
+                      ),
                     ),
                   ),
                 ),
