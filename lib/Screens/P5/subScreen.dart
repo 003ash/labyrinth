@@ -23,7 +23,7 @@ class SubScreen extends StatelessWidget {
                     },
                     child: Center(
                       child: Text(
-                        'Click here to open 1st QR code',style: kDefaultTextStyle,
+                        'Tap here to open 1st QR code',style: kDefaultTextStyle,
                       ),
               ),
                   )),
@@ -34,7 +34,7 @@ class SubScreen extends StatelessWidget {
                     },
                     child: Center(
                       child: Text(
-                        'Click here to open 2nd QR code',style: kDefaultTextStyle,
+                        'Tap here to open 2nd QR code',style: kDefaultTextStyle,
                       ),
                     ),
                   ))

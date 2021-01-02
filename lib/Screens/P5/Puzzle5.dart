@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:labyrinth/Screens/P5/subScreen.dart';
+import 'package:labyrinth/Screens/P6/Puzzle6.dart';
 import '../../constants.dart';
+import '../SlideTransition.dart';
 import 'Hint5.dart';
 
 class Puzzle5 extends StatelessWidget {
@@ -15,7 +17,11 @@ class Puzzle5 extends StatelessWidget {
           },
         ),
         actions: [
-          IconButton(icon: Icon(Icons.arrow_forward_ios,color: kTextColor,), onPressed: (){})
+          IconButton(icon: Icon(Icons.arrow_forward_ios,color: kTextColor,), onPressed: () {
+            Route route =
+            MySlideTransition(builder: (context) => Puzzle6());
+            Navigator.push(context, route);
+          })
         ],
         backgroundColor: kBackgroundDark,
         centerTitle: true,
